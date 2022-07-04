@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="./jquery-3.4.1.min.js"></script>
+    <script src="./popper.min.js"></script>
+    <script src="./bootstrap.min.js"></script>
+    <script src="./jqcrud.js"></script>
+    <link rel="stylesheet" href="./bootstrap.min.css" />
+    <link rel="stylesheet" href="./jqstyles.css" />
+    
+    <title>FooDiFy</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script> -->
+
+    <!-- Animated Container -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="project.css" />
+    <script src="./script.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid p-0">
+        <div class="container-fluid p-0">
+            <img src="mainpic.jpg" class="img" alt="" />
+            <!-- <div class="position-left">
+                <img src="logo.jpg" class="logo" alt="not found" />
+            </div> -->
+            
+            <div class="position-right">
+                <button type="button" class="button button-effect">
+                    Home
+                </button>
+                <button type="button" class="button button-effect">
+                    <a href="#lastcontainer">Abouts</a>
+                    
+                </button>
+                <button type="button" class="button button-effect">
+                    <a href="#ourchef">Chef</a>
+                </button>
+                <button type="button" class="button button-effect">
+                    <a href="#menucontainer">Menu</a>
+                </button>
+                <button type="button" class="button button-effect">
+                    <a href="#booking">Reservation</a>
+                </button>
+
+                <button type="button" class="button button-effect">
+                    <a href="#lastcontainer">Contacts</a>
+                </button>
+
+                <button type="button" class="button button-effect">
+
+                    <a class = "std" href="../login/index.html">Logout</a>
+                    
+                </button>
+               
+            </div>
+
+
+            
+            <div class="position-centre">
+                <h1 class="Write">FooDiFy Restaurant</h1>
+                <h1 class="Write1">Best Quality Food</h1>
+            </div>
+            <div class="bottom-right">
+                <!-- <button type="button" class="button1 draw-border buttonx">Get Started</button> -->
+                <button type="button" class="button button-effect">
+                    Get Started
+                </button>
+            </div>
+        </div>
+
+        <!-- Menu Container-->
+        <div class="container-fluid p-0 mt-5">
+            <div id = "menucontainer">
+                <h1 class="position1">Our Menu</h1> <br><br>
+                <!-- Breakfast Container -->
+                <!-- <h1 class="position1x">Breakfast</h1> -->
+                <button class = "button3x" onclick="hideshowmenu()"> <span>Breakfast</span></button>
+                <div id = "breakfast">
+                    <div class=" container-fluid row m-0 parent">
+                        <div class="col-sm">
+                            <div class="card mt-5 imgcard">
+                                <img class="card-img-top imgset" src="missi-roti.jpg" alt="Card image" />
+                                <div class="card-body">
+                                    <h4 class="card-title">Missi Roti</h4>
+                                    <p class="card-text">
+                                        Wheat flour, Gram flour and Spices
+                                        <p class = "price"> $1.99</p>
+                                    </p>
+                                    <!-- <a href="#" class="btn btn-primary">Add to Bucket</a> -->
+                                </div>
+                            </div>
+                        </div>
+                          
+                        <div class="col-sm">
+                            <div class="card mt-5 imgcard">
+                                <img class="card-img-top imgset" src="malaysian roti.jpg" alt="Card image" style="width: 100%" />
+                                <div class="card-body">
+                                    <h4 class="card-title">Malaysian Roti</h4>
+                                    <p class="card-text">
+                                        Flour, Meat, Salt, Sugar and Ghee.
+                                        <p class = "price"> $1.79</p>
+                                    </p>
+                                    <!-- <a href="#" class="btn btn-primary">Add to Bucket</a> -->
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm">
+                            <div class="card mt-5 imgcard">
+                                <img class="card-img-top imgset" src="paratha.jpg" alt="Card image" />
+                                <div class="card-body">
+                                    <h4 class="card-title">
+                                        Paratha
+                                    </h4>
+                                    <p class="card-text">
+                                        Flour, Salt and Ghee
+                                        <p class = "price"> $0.99</p>
+                                    </p>
+                                    <!-- <a href="#" class="btn btn-primary">Add to Bucket</a> -->
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+
+
+                    <div class="container-fluid row m-0 parent">
+                        <div class="col-sm">
+                            <div class="card mt-5 imgcard">
+                                <img class="card-img-top imgset" src="luchii.jpg" alt="Card image" />
+                                <div class="card-body">
+                                    <h4 class="card-title">
+                                        Luchi
+                                    </h4>
+                                    <p class="card-text">
+                                        All purpose Flour, Vegetable Oil, Salt, Ghee.
+                                        <p class = "price"> $2.49</p>
+                                    </p>
+                                    <!-- <a href="#" class="btn btn-primary">Add to Bucket</a> -->
+                                </div>
+                            </div>
+                          </div>
+
+                          <div class="col-sm">
+                            <div class="card mt-5 imgcard">
+                                <img class="card-img-top imgset" src="halwa.jpg" alt="Card image" style="width: 100%" />
+                                <div class="card-body">
+                                    <h4 class="card-title">Suji Halwa</h4>
+                                    <p class="card-text">
+                                    Ghee, Milk, Cardamoms and Nuts. 
+                                        <p class = "price"> $2.49</p>
+                                    </p>
+                                    <!-- <a href="#" class="btn btn-primary">Add to Bucket</a> -->
+                                </div>
+                            </div>
+                          </div>
+
+                          <div class="col-sm">
+                            <div class="card mt-5 imgcard">
+                                <img class="card-img-top imgset" src="starters.jpg" alt="Card image" style="width: 100%" />
+                                <div class="card-body">
+                                    <h4 class="card-title">
+                                        Starters
+                                    </h4>
+                                    <p class="card-text">
+                                        Different Ingredients.
+                                        <p class = "price"> $0.39</p>
+                                        
+                                    </p>
+                                    <!-- <a href="#" class="btn btn-primary">Add to Bucket</a> -->
+                                </div>
+                            </div>
+                          </div>
+                    </div>
+
+
+                    <div class="container-fluid row m-0 parent">
+
+                        <div class="col-sm">
+                            <div class="card mt-5 imgcard">
+                                <img class="card-img-top imgset" src="tea.jpg" alt="Card image" />
+                                <div class="card-body">
+                                    <h4 class="card-title">
+                                        Regular Tea
+                                    </h4>
+                                    <p class="card-text">
+                                        <p class = "price"> $0.39</p>
+                                    </p>
+                                    <!-- <a href="#" class="btn btn-primary">Add to Bucket</a> -->
+                                </div>
+                            </div>
+                          </div>
+
+                          <div class="col-sm">
+                            <div class="card mt-5 imgcard">
+                                <img class="card-img-top imgset" src="cappu.jpg" alt="Card image" style="width: 100%" />
+                                <div class="card-body">
+                                    <h4 class="card-title">Cappuccino</h4>
+                                    <p class="card-text">
+                                    
+                                        <p class = "price"> $0.99</p>
+                                    </p>
+                                    <!-- <a href="#" class="btn btn-primary">Add to Bucket</a> -->
+                                </div>
+                            </div>
+                          </div>
+
+                          <div class="col-sm">
+                            <div class="card mt-5 imgcard">
+                                <img class="card-img-top imgset" src="black.jpg" alt="Card image" style="width: 100%" />
+                                <div class="card-body">
+                                    <h4 class="card-title">
+                                        Black Coffee
+                                    </h4>
+                                    <p class="card-text">
+                                    
+                                        <p class = "price"> $1.19</p>
+                                        
+                                    </p>
+                                    <!-- <a href="#" class="btn btn-primary">Add to Bucket</a> -->
+                                </div>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+    
+                <!-- Lunch Menu -->
+                <br><br>
+                <button class = "button3x" onclick="hideshowlunchmenu()"> <span>Lunch</span></button>
+                <div id = "lunch">
+                    <div class="container-fluid row m-0 parent">
+
+                        <div class="col-sm">
+                            <div class="card mt-5 imgcard">
+                                <img class="card-img-top imgset" src="chicken curry.jpg" alt="Card image" />
+                                <div class="card-body">
+                                    <h4 class="card-title">Chicken Curry</h4>
+                                    <p class="card-text">
+                                        Wheat flour, Gram flour and Spices
+                                        <p class = "price"> $3.99</p>
+                                    </p>
+                                    <!-- <a href="#" class="btn btn-primary">Add to Bucket</a> -->
+                                </div>
+                            </div>
+                          </div>
+
+                          <div class="col-sm">
+                            <div class="card mt-5 imgcard">
+                                <img class="card-img-top imgset" src="biryani.jpg" alt="Card image" style="width: 100%" />
+                                <div class="card-body">
+                                    <h4 class="card-title">Rice and Biryani</h4>
+                                    <p class="card-text">
+                                        Flour, Meat, Salt, Sugar and Ghee.
+                                        <p class = "price"> $1.79</p>
+                                    </p>
+                                    <!-- <a href="#" class="btn btn-primary">Add to Bucket</a> -->
+                                </div>
+                            </div>
+                          </div>
+
+                          <div class="col-sm">
+                            <div class="card mt-5 imgcard">
+                                <img class="card-img-top imgset" src="pulao.jpg" alt="Card image" />
+                                <div class="card-body">
+                                    <h4 class="card-title">
+                                        Plain Pulao
+                                    </h4>
+                                    <p class="card-text">
+                                        Flour, Salt and Ghee
+                                        <p class = "price"> $0.99</p>
+                                    </p>
+                                    <!-- <a href="#" class="btn btn-primary">Add to Bucket</a> -->
+                                </div>
+                            </div>
+                          </div>            
+                        
+                        
+                    </div>
+                    <div class="container-fluid row m-0 parent">
+
+                        <div class="col-sm">
+                            <div class="card mt-5 imgcard">
+                                <img class="card-img-top imgset" src="kabab.jpg" alt="Card image" />
+                                <div class="card-body">
+                                    <h4 class="card-title">
+                                        Tandoori & Kebabs
+                                    </h4>
+                                    <p class="card-text">
+                                        All purpose Flour, Vegetable Oil, Salt, Ghee.
+                                        <p class = "price"> $2.49</p>
+                                    </p>
+                                    <!-- <a href="#" class="btn btn-primary">Add to Bucket</a> -->
+                                </div>
+                            </div>
+                          </div>
+
+                          <div class="col-sm">
+                            <div class="card mt-5 imgcard">
+                                <img class="card-img-top imgset" src="veg.jpg" alt="Card image" style="width: 100%" />
+                                <div class="card-body">
+                                    <h4 class="card-title">Mixed Vegetables</h4>
+                                    <p class="card-text">
+                                    Ghee, Milk, Cardamoms and Nuts. 
+                                        <p class = "price"> $2.49</p>
+                                    </p>
+                                    <!-- <a href="#" class="btn btn-primary">Add to Bucket</a> -->
+                                </div>
+                            </div>
+                          </div>
+
+                          <div class="col-sm">
+                            <div class="card mt-5 imgcard">
+                                <img class="card-img-top imgset" src="drinks.jpg".jpg" alt="Card image" style="width: 100%" />
+                                <div class="card-body">
+                                    <h4 class="card-title">
+                                        Drinks
+                                    </h4>
+                                    <p class="card-text">
+                                        Different Ingredients.
+                                        <p class = "price"> $0.39</p>
+                                        
+                                    </p>
+                                    <!-- <a href="#" class="btn btn-primary">Add to Bucket</a> -->
+                                </div>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+    
+                <!-- Dinner Div -->
+                <br><br>
+                <button class = "button3x" onclick="hideshowdinnermenu()"> <span>Dinner</span></button>
+                    <div id = "dinner">
+                    <div class="container-fluid row m-0 parent">
+                        <div class="col-sm">
+                            <div class="card mt-5 imgcard">
+                                <img class="card-img-top imgset" src="beef.jpg" alt="Card image" />
+                                <div class="card-body">
+                                    <h4 class="card-title">Ground Beef Gyro</h4>
+                                    <p class="card-text">
+                                        Wheat flour, Gram flour and Spices
+                                        <p class = "price"> $3.99</p>
+                                    </p>
+                                    <!-- <a href="#" class="btn btn-primary">Add to Bucket</a> -->
+                                </div>
+                            </div>
+                          </div>
+
+                          <div class="col-sm">
+                            <div class="card mt-5 imgcard">
+                                <img class="card-img-top imgset" src="beef stakes.jpg" alt="Card image" style="width: 100%" />
+                                <div class="card-body">
+                                    <h4 class="card-title">Beef Steaks</h4>
+                                    <p class="card-text">
+                                        Flour, Meat, Salt, Sugar and Ghee.
+                                        <p class = "price"> $1.79</p>
+                                    </p>
+                                    <!-- <a href="#" class="btn btn-primary">Add to Bucket</a> -->
+                                </div>
+                            </div>
+                          </div>
+
+                          <div class="col-sm">
+                            <div class="card mt-5 imgcard">
+                                <img class="card-img-top imgset" src="karahi.jpg" alt="Card image" />
+                                <div class="card-body">
+                                    <h4 class="card-title">
+                                        Chicken Karahi Curry
+                                    </h4>
+                                    <p class="card-text">
+                                        Flour, Salt and Ghee
+                                        <p class = "price"> $0.99</p>
+                                    </p>
+                                    <!-- <a href="#" class="btn btn-primary">Add to Bucket</a> -->
+                                </div>
+                            </div>
+                          </div>    
+                    </div>
+                    <div class="container-fluid row m-0 parent">
+                        <div class="col-sm">
+                            <div class="card mt-5 imgcard">
+                                <img class="card-img-top imgset" src="ricy chicken.jpg" alt="Card image" />
+                                <div class="card-body">
+                                    <h4 class="card-title">
+                                        Chicken Stuffed with Rice
+                                    </h4>
+                                    <p class="card-text">
+                                        All purpose Flour, Vegetable Oil, Salt, Ghee.
+                                        <p class = "price"> $2.49</p>
+                                    </p>
+                                    <!-- <a href="#" class="btn btn-primary">Add to Bucket</a> -->
+                                </div>
+                            </div>
+                          </div>
+
+                          <div class="col-sm">
+                            <div class="card mt-5 imgcard">
+                                <img class="card-img-top imgset" src="seekh.jpg" alt="Card image" style="width: 100%" />
+                                <div class="card-body">
+                                    <h4 class="card-title">Seekh kabab</h4>
+                                    <p class="card-text">
+                                    Ghee, Milk, Cardamoms and Nuts. 
+                                        <p class = "price"> $2.49</p>
+                                    </p>
+                                    <!-- <a href="#" class="btn btn-primary">Add to Bucket</a> -->
+                                </div>
+                            </div>
+                          </div>
+
+                          <div class="col-sm">
+                            <div class="card mt-5 imgcard">
+                                <img class="card-img-top imgset" src="desert.jpg" alt="Card image" style="width: 100%" />
+                                <div class="card-body">
+                                    <h4 class="card-title">
+                                        Desserts
+                                    </h4>
+                                    <p class="card-text">
+                                        Different Ingredients.
+                                        <p class = "price"> $0.39</p>
+                                        
+                                    </p>
+                                    <!-- <a href="#" class="btn btn-primary">Add to Bucket</a> -->
+                                </div>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+                <br>
+            </div>
+           
+            <!-- Booking Container -->
+            <div id = "booking">
+                <div class="container-fluid p-0 mt-2">
+                    <img src="dining.jpg" class="img2" alt="not found" />
+                    <div class="position-centre2">
+                        <br />
+                        <h1 class="textcont">
+                            Now Booking
+                            <br>
+                        <strong class="textss"> Private Dinners & Happy Hours </strong>
+                        </h1>
+                        <br>
+                        <button type="button" class="button1 pos1" onclick="hideshow()">
+                        <span> <strong>Book Your Table Now</strong> </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+        <!-- Reservation of the table -->
+        <div class = "container-fluid p-0 ">
+            <div id="booktbl" > 
+            <div id="booktbls">
+                <h1 class = "reviewhead">Book Your Table Now! </h1>
+            </div>
+            <br>
+            <div class = "container parent">
+                <div class = "bookingcont">
+                    <input class = "inputs" id = "nameentry" type="text" placeholder="Enter Name Here..." />
+                    <input class = "inputs" id = "mailentry" type="text" placeholder="Enter Email Here..." />
+                    <input class = "inputs" id = "numberentry" type="text" placeholder="Contact Number..." />
+                    <input class = "inputs" id = "dateentry" type="date" placeholder="Check In..." />
+                    <input class = "inputs" id = "timeentry" type="time" placeholder="Time..." />
+                    <input class = "inputs" type="guestentry" placeholder="Enter No of Guests Here..." />
+                    <br><br>
+                    <button type="button" class="button2x">
+                        <span> <strong>Book Your Table Now</strong> </span>
+                     </button>
+
+                </div>
+                <!-- <div class = "chefcont">
+                    <img src="chefs.png" alt="">
+                    <div><h2 class = "Imagetext">Flavours at Your Fingertips</h2>
+                    
+                </div> -->
+                    
+
+                </div>
+
+            </div>
+            
+            
+            </div>
+           
+           
+        </div>
+
+        <!-- Food At Door Step-->
+        <br /><br />
+        <div class="parents mt-5">
+            <div class="cont">
+                <h1 class="cdata">Get Your FOOD at your Door Step</h1>
+                <br />
+                <h3 class="cdata2">Over 200 Global Clients</h3>
+                <p class="text">
+                    Our online food ordering and delivery system centralizes all pick-up, delivery & dine in orders, so you can easily be in full control of your business. <br /><b class="cdata3">
+                        FooDiFy
+                    </b>
+                    is privileged to create a great customer experience, by enabling them to choose the time when they want to pick up their ready-made food.
+                </p>
+                <br />
+                <button type="button" class="button1 posx">
+                  <span>Learn More</span> 
+                </button>
+            </div>
+            <div class="cont2">
+                <img src="takeaway1.jpg" class="cimage" alt="not found" />
+                <br />
+            </div>
+
+
+            <!-- Food Delivery Inputs -->
+            
+        </div> <br><br>
+        <!-- Our Master Chef -->
+        <div id = "ourchef">
+            <!-- <div class=" parents container-fluid row m-0">
+                <div col-sm>
+                    <h1 class="position1">Our Master Chef</h1> <br><br>
+                </div>
+            </div> -->
+            <!-- <h1 class="position1">Our Master Chef</h1> -->
+            <div class = "extra">
+                <h1 class = "reviewhead">Our Master Chef</h1>
+            </div>
+           
+                
+            <div class="parents colorxx container-fluid row m-0">
+
+                <div class="col-sm-3">
+                    <div class="card mt-5 imgcards">
+                        <img class="card-img-top imgset" src="lady1.jpg" alt="Card image" />
+                        <div class="card-body cardcss">
+                            <h4 class="card-title">Fatima Ali</h4>
+                            <p class="card-text">
+                                Fatima Ali is a Pakistani-American executive chef, restaurateur and television personality. She is known for her successful appearances on reality cooking shows Chopped and Top Chef, and for winning a James Beard Foundation Award for her essay on living with sarcoma.
+    
+                            </p>
+                        </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-3">
+                    <div class="card mt-5 imgcards">
+                        <img class="card-img-top imgset" src="lady.png" alt="Card image" />
+                        <div class="card-body cardcss">
+                            <h4 class="card-title">Zubaida Tariq Ilyas</h4>
+                            <p class="card-text">
+                                Zubaida Tariq Ilyas is a Pakistani chef, herbalist, and cooking expert. She was the first celebrity cook of Pakistan, appearing on numerous TV shows, and was also known for her lifehacks. She has won multiple awards on national and international level.
+                            </p>
+                        </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-3">
+                    <div class = "chefcontainer">
+                        <div class="card mt-5 imgcards">
+                            <img class="card-img-top imgset" src="cheffh.jpg" alt="Card image" />
+                            <div class="card-body cardcss">
+                                <h4 class="card-title">Ammara Noman</h4>
+                                <p class="card-text ">
+                                    Ammara Noman is a Pakistani chef who rose to prominence after winning the title of first MasterChef Pakistan. She beat about 100 contestants and her 15 co-contestants who entered the Masterchef Kitchen. She has won multiple awards on national and international level.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-3">
+                    <div class="card mt-5 imgcards">
+                        <img class="card-img-top imgset" src="chaff.jpg" alt="Card image" />
+                        <div class="card-body cardcss">
+                            <h4 class="card-title">Zarnak Sidhwa</h4>
+                            <p class="card-text">
+                                Zarnak Sidhwa (born 15 December 1972) is a Pakistani chef and chocolatier.[2] She is featured in Hum Masala TV show Food Diaries, and used to be a part of Chocoholics. She belongs to Parsi community of Karachi. She is well known for his mind blowing cooking.
+                            </p>
+                        </div>
+                    </div>
+                  </div>
+            </div>
+
+            
+        </div>
+        
+        <!-- Animated Container -->
+        <div class="wrapper">
+            <div class="counter-up">
+                <div class="content">
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="counter">724</div>
+                        <div class="text">Five Stars</div>
+                    </div>
+                    <div class="box">
+                        <div class="icon"><i class="fas fa-utensils"></i></div>
+                        <div class="counter">786</div>
+                        <div class="text">Meals Delivered</div>
+                    </div>
+                    <div class="box">
+                        <div class="icon"><i class="fas fa-smile-beam"></i></div>
+                        <div class="counter">543</div>
+                        <div class="text">Happy Customers</div>
+                    </div>
+                    <div class="box">
+                        <div class="icon"><i class="fas fa-list"></i></div>
+                        <div class="counter">140</div>
+                        <div class="text">Menu Items</div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+<!--Abouts Container -->
+        <div id = "lastcontainer">
+
+            <div class = " lastcont container-fluid row m-0 parents">
+
+                <div class="col-sm">
+                    <div class = "aboutsocial">
+                        <br>
+                        <h1 class = "heding">
+                            <Strong>About Us:</Strong> 
+                        </h1>
+                        <br><br>
+                        <p class = "serving"><strong>"Every Serving is a Treat"</strong></p> <br>
+                        <p>We are aiming to provide you with the best food experience in your life.</p>
+                        <p>We know that your time is valuable and sometimes every minute in the day counts. <strong> That’s why we deliver!</strong><br> So you can spend more time doing the things you love.</p>
+    
+                        <div class = "iconic">
+                            <button class = "iconsss"><i class="fa fa-facebook" aria-hidden="true"></i></button>
+                            <button class = "iconsss"><i class="fa fa-instagram" aria-hidden="true"></i></button>
+                            <button class = "iconsss"><i class="fa fa-twitter" aria-hidden="true"></i></button>
+                        </div>
+                    </div> 
+                  </div>
+
+                  <div class="col-sm">
+                    <div class = "aboutsocial">
+                        <br>
+                        <h1 class = "heding">
+                            <Strong>Open Hours:</Strong> 
+                        </h1>
+                        <br><br> <br>
+                        <div class = "parents">
+                            <div class = "firstone">
+                                <p class = "weekdays"> <strong> Monday </strong></p>
+                                <p class = "weekdays"><strong> Tuesday </strong></p>
+                                <p class = "weekdays"><strong> Wednesday </strong></p>
+                                <p class = "weekdays"><strong> Thursday </strong></p>
+                                <p class = "weekdays"><strong> Friday </strong></p>
+                                <p class = "weekdays"><strong> Saturday </strong></p> 
+                                <p class = "weekdays"><strong> Sunday</strong></p>
+                            </div>
+                            <div class = "secondone">
+                                <p>9:00 - 24:00</p>
+                                <p>9:00 - 24:00</p>
+                                <p>9:00 - 24:00</p>
+                                <p>9:00 - 24:00</p>
+                                <p>9:00 - 2:00</p>
+                                <p>9:00 - 24:00</p>
+                                <p>Closed</p>
+                            </div>
+                        </div>
+                        
+                    </div> One of three columns
+                  </div>
+
+                  <div class="col-sm">
+                    <div class = "aboutsocial">
+                        <br>
+                        <h1 class = "heding">
+                            <Strong>Need Help?</Strong> 
+                        </h1>
+                        <br><br><br>
+                        <h3 class = "needhelp">Contact Us</h3>
+                        <h3  class = "needhelp">Referrel FAQs</h3>
+                        <h3  class = "needhelp">FAQs</h3>
+                        <h3  class = "needhelp">Cookie Policy</h3>
+                        <h3  class = "needhelp">Privacy Policy</h3>
+                        <h3  class = "needhelp">Secure Payment Methods</h3>
+                        <h3  class = "needhelp">Suggest a Product</h3>
+                        <h3  class = "needhelp">Visit Our BloG</h3>
+                        <h3  class = "needhelp">Terms And Conditions</h3>
+    
+                        <br><br>
+                    </div> 
+                  </div>
+
+                  <div class="col-sm">
+                    <div class = "aboutsocial">
+                        <br>
+                        <h1 class = "heding">
+                            <Strong>NEWSLETTER:</Strong> 
+                        </h1>
+                        <br><br>
+                        <h3 class = "subscribe">Subscribe to our News letter for Further updates
+                            <br><br><br>
+                            Enter Your Email Address:
+    
+                        </h3>
+                        <input class = "inp" type="text" placeholder="Email Address Here..." />
+                        <br><br>
+                        <button class="subscribed button3">Subscribe</button>
+                        
+    
+                        <br><br>
+                    </div> 
+                  </div>
+                  
+                 
+                
+                         
+            </div>
+        </div>
+        <br><br>
+<!-- Reviews Section -->
+        <div class = "container-fluid p-0">
+            <div class = "container-fluid p-0 reviewsec">
+                <h1 class = "reviewhead">CUSTOMER REVIEWS</h1>
+                <!-- <div class = "commentbox">
+                    <h1>User Reviews</h1>
+                </div> -->
+            </div>
+            
+        </div>
+
+        <!-- Modifications -->
+        
+
+  
+
+        <!-- Modal for posting a Comment-->
+        <div class="modal fade" id="addModal" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Add New Comment</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="form-group">
+                  <label for="title">Title</label>
+                  <input type="text" class="form-control" name="title" id="title" aria-describedby="titleHelp"
+                    placeholder="Add your Comment Title Here" />
+                  <small id="titleHelp" class="form-text text-muted">Comment Title</small>
+                </div>
+                <div class="form-group">
+                  <label for="body">Body</label>
+                  <input type="text" class="form-control" name="body" id="body" aria-describedby="bodyHelp"
+                    placeholder="Your Reviews Here" />
+                  <small id="bodyHelp" class="form-text text-muted">Enter Details</small>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button id="addBtn" class="btn btn-info">Post Comment</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal"> Close </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br><br>
+      
+        <div id="products">
+          Loading ...
+        </div>
+        <br><br>
+      
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary btn-lg float-right" data-toggle="modal" data-target="#addModal">
+          Post a Comment
+        </button>
+      <!-- Modal for updating a Comment -->
+        <div class="modal fade" id="updateModal" tabindex="-1" role="dialog" aria-labelledby="modelTitleId"
+          aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Update Comment</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <input type="hidden" id="updateId" /> <br />
+                <div class="form-group">
+                  <label for="updateTitle">Title</label>
+                  <input type="text" class="form-control" name="updateTitle" id="updateTitle" aria-describedby="updateHelpId"
+                    placeholder="" />
+                  <small id="updateHelpId" class="form-text text-muted">Enter Title to Update</small>
+                </div>
+                <div class="form-group">
+                  <label for="updateBody">Body</label>
+                  <textarea class="form-control" name="updateBody" id="updateBody" rows="3"></textarea>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button id="updateSave" class="btn btn-primary">Update</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+    </div>
+</body>
+
+</html>
